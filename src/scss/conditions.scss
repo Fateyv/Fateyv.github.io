@@ -1,0 +1,32 @@
+.conditions {
+    padding: 120px 0;
+    background-image: url(../image/II.svg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: top 70px right 258px;
+}
+
+.conditions__list {
+    width: 72%;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 193px 1fr 1fr 1fr;
+    gap: 70px;
+}
+
+.conditions__item {
+    text-align: center;
+}
+
+.conditions__img {
+    height: 80px;
+    margin-bottom: 52px;
+}
+
+.conditions__text {
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 2rem;
+    line-height: (27 / 20);
+}

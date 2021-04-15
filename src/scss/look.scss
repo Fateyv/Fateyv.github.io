@@ -1,0 +1,33 @@
+.look {
+    padding: 180px 0;
+    background-image: url(../image/background.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center top;
+}
+
+.look__title--margin {
+    margin-bottom: 50px;
+}
+
+.look__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.look__text {
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+.look__form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 35px;
+    column-gap: 30px;
+    align-items: center;
+}

@@ -1,0 +1,33 @@
+.footer {
+    padding: 60px 0;
+    background-color: #2D343C;
+}
+
+.footer__list {
+    display: grid;
+    grid-template-columns: 135px 119px 119px 239px;
+    gap: 166px;
+}
+
+.list {
+    display: grid;
+    gap: 15px;
+}
+
+.link {
+    font-size: 1.4rem;
+    line-height: (16 / 14);
+    letter-spacing: 0.05em;
+}
+
+.link-icon {
+    margin-left: 20px;
+}
+
+.link-icon:first-child {
+    margin-left: 0;
+}
+
+.span--yellow {
+    color: #D4C17F;
+}

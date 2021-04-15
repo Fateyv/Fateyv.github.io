@@ -1,0 +1,14 @@
+.questions {
+    padding-bottom: 180px;
+}
+
+.questions__title--margin {
+    margin-bottom: 50px;
+}
+
+.questions__form {
+    display: grid;
+    grid-template-columns: repeat(4, 255px);
+    gap: 30px;
+    align-items: center;
+}
