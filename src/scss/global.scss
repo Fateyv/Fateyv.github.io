@@ -32,19 +32,30 @@ html, body {
     text-align: center;
     padding: 12px 54px;
     background-color: #D4C17F;
+    transition: all 0.6s;
+}
+
+.button:hover {
+    box-shadow: 5px 5px 5px 5px  #8aa5fdd8;
 }
 
 .input {
-    background-color: #FFFFFF;
-    opacity: 0.2;
+    background-color: rgba(255, 255, 255, 0.2);
     min-width: 255px;
     min-height: 50px;
+    font-size: 1.8rem;
+    color: #BEBEBE;
+    transition: all 0.6s;
+}
+
+.input:hover {
+    box-shadow: 5px 5px 5px 5px  #8aa5fdd8;
 }
 
 .input::placeholder {
     font-size: 1.4rem;
     line-height: 1.93;
-    color: black;
+    color: #BEBEBE;
     text-align: center;
 }
 

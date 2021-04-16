@@ -19,10 +19,21 @@
 .flats__item {
     background: linear-gradient(180deg, rgba(36, 43, 51, 0) 0%, #242B33 100%); 
     position: relative;
+    overflow: hidden;
 }
 
 .flats__img {
     width: auto;
+    transform: scale(0);
+    transition: all 0.8s ease 0s;
+}
+
+.flats__img._active {
+    transform: scale(1);
+}
+
+.flats__img:hover {
+    transform: scale(1.1);
 }
 
 .flats__text {
@@ -31,4 +42,13 @@
     line-height: (28 / 24);
     bottom: 50px;
     left: 50px;
+    transform: translate(0px, 50%);
+    opacity: 0;
+    transition: all 0.3s ease 0s;
+}
+
+.flats__text._active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+    transition: all 0.3s ease 0.8s;
 }

@@ -17,6 +17,31 @@
 
 .conditions__item {
     text-align: center;
+
+    transform: translate(0px, 120%);
+    transition: all 0.4s ease 0s;
+    opacity: 0;
+}
+
+.conditions__list._active li {
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+
+.conditions__list._active li:nth-child(1) {
+    transition: all 0.4s ease 0.2s;
+}
+
+.conditions__list._active li:nth-child(2) {
+    transition: all 0.4s ease 0.4s;
+}
+
+.conditions__list._active li:nth-child(3) {
+    transition: all 0.4s ease 0.6s;
+}
+
+.conditions__list._active li:nth-child(4) {
+    transition: all 0.4s ease 0.8s;
 }
 
 .conditions__img {

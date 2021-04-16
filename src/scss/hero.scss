@@ -31,6 +31,15 @@
     text-align: center;
     color: #D4C17F;
     margin-bottom: 250px;
+
+    transform: translate(0px, 200%);
+    opacity: 0;
+    transition: all 0.8s ease 0s;
+}
+
+.hero__title._active {
+    transform: translate(0px, 0px);
+    opacity: 1;
 }
 
 .hero__wrapper-links {
@@ -45,6 +54,20 @@
 .hero__links {
     display: flex;
     align-items: center;
+    
+    transform: translate(0px, 150%);
+    opacity: 0;
+    transition: all 0.8s ease 0s;
+}
+
+.hero__links:hover {
+    text-decoration: underline;
+}
+
+.hero__links._active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+    transition: all 0.8s ease 0.4s;
 }
 
 .hero__links-text {

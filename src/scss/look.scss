@@ -4,6 +4,13 @@
     background-repeat: no-repeat;
     background-size: auto;
     background-position: center top;
+
+    transform: translate(-100%, 0px);
+    transition: all 1s ease 0.3s;
+}
+
+.look._active {
+    transform: translate(0px, 0px);
 }
 
 .look__title--margin {
