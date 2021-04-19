@@ -4,6 +4,17 @@
     background-repeat: no-repeat;
     background-size: auto;
     background-position: top 70px right 258px;
+    @include media-breakpoint-iPad-Pro {
+        padding: 50px 0;
+    }
+    @include media-breakpoint-iPad {
+        padding: 30px 0;
+    }
+    @include media-breakpoint-mobile-Plus {
+        background-position: top 70px right 150px;
+        background-size: 60%;
+        padding: 20px 0;
+    }
 }
 
 .conditions__list {
@@ -13,6 +24,17 @@
     display: grid;
     grid-template-columns: 193px 1fr 1fr 1fr;
     gap: 70px;
+    @include media-breakpoint-iPad-Pro {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 50px;
+    }
+    @include media-breakpoint-iPad {
+        gap: 30px;
+    }
+    @include media-breakpoint-mobile-Plus {
+        width: 90%;
+    }
 }
 
 .conditions__item {
@@ -47,6 +69,13 @@
 .conditions__img {
     height: 80px;
     margin-bottom: 52px;
+    @include media-breakpoint-iPad-Pro {
+        margin-bottom: 30px;
+    }
+    @include media-breakpoint-iPad {
+        margin-bottom: 15px;
+        height: 60px;
+    }
 }
 
 .conditions__text {
@@ -54,4 +83,13 @@
     font-weight: 300;
     font-size: 2rem;
     line-height: (27 / 20);
+    @include media-breakpoint-iPad-Pro {
+        font-size: 1.8rem;
+    }
+    @include media-breakpoint-iPad {
+        font-size: 1.4rem;
+    }
+    @include media-breakpoint-mobile-Plus {
+        font-size: 1.3rem;
+    }
 }

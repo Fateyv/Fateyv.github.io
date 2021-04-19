@@ -1,0 +1,137 @@
+html, body {
+    font-size: 10px;
+    background-color: #242B33;
+    color: #FFFFFF;
+    font-family: 'Raleway', sans-serif;
+}
+
+.container {
+    width: 1110px;
+    margin-left: auto;
+    margin-right: auto;
+    @include media-breakpoint-large-tablet {
+        width: 90%;
+    }
+    @include media-breakpoint-iPad {
+        width: 94%;
+    }
+}
+
+.title--hidden {
+    display: none;
+}
+
+.title {
+    font-family: 'Playfair Display';
+    font-weight: bold;
+    font-size: 3.6rem;
+    line-height: (48 / 36);
+    color: #D4C17F;
+    @include media-breakpoint-large-tablet {
+        text-align: center;
+    }
+    @include media-breakpoint-iPad {
+        font-size: 2.8rem;
+    }
+    @include media-breakpoint-Surface-Duo {
+        font-size: 2.6rem;
+    }
+    @include media-breakpoint-mobile-Plus {
+        font-size: 2.4rem;
+    }
+}
+
+.button {
+    min-width: 255px;
+    color: inherit;
+    font-weight: bold;
+    font-size: 1.6rem;
+    line-height: 1.69;
+    text-align: center;
+    padding: 9px 50px;
+    background-color: #af993e;
+    transition: all 0.4s;
+    border: 3px solid #af993e;
+    @include media-breakpoint-iPad {
+        min-width: 220px;
+        padding: 7px 30px;
+        font-size: 1.4rem;
+    }
+    @include media-breakpoint-Surface-Duo {
+        min-width: 200px;
+        padding: 6px 20px;
+        font-size: 1.3rem;
+    }
+    @include media-breakpoint-mobile-Plus {
+        min-width: 160px;
+        padding: 6px 10px;
+        font-size: 1.2rem;
+    }
+    @include media-breakpoint-mobile {
+        min-width: 48%;
+        font-size: 1.1rem;
+    }
+}
+
+.button:hover {
+    border: 3px solid #ece4c3;
+    @include media-breakpoint-iPad-Pro {
+        border: 3px solid #af993e;
+    }
+}
+
+.input {
+    background-color: rgba(255, 255, 255, 0.2);
+    min-width: 255px;
+    min-height: 50px;
+    font-size: 1.8rem;
+    color: #BEBEBE;
+    transition: all 0.4s;
+    @include media-breakpoint-iPad {
+        min-width: 220px;
+        padding: 7px 30px;
+        font-size: 1.6rem;
+    }
+    @include media-breakpoint-Surface-Duo {
+        min-width: 200px;
+        padding: 6px 20px;
+        font-size: 1.3rem;
+        min-height: 40px;
+    }
+    @include media-breakpoint-mobile-Plus {
+        min-width: 160px;
+        padding: 6px 10px;
+        font-size: 1.2rem;
+    }
+    @include media-breakpoint-mobile {
+        min-width: 48%;
+        font-size: 1.1rem;
+    }
+}
+
+.input:hover {
+    border: 5px solid rgba(255, 255, 255, 0.2);
+    @include media-breakpoint-iPad-Pro {
+        border: none;
+    }
+}
+
+.input:focus {
+    border: 5px solid rgba(255, 255, 255, 0.2);
+}
+
+.input::placeholder {
+    font-size: 1.4rem;
+    line-height: 1.93;
+    color: #BEBEBE;
+    text-align: center;
+    @include media-breakpoint-Surface-Duo {
+        line-height: 1.2;
+        font-size: 1.3rem;
+    }@include media-breakpoint-mobile-Plus {
+        font-size: 1.2rem;
+    }
+    @include media-breakpoint-mobile {
+        font-size: 1.1rem;
+    }
+}

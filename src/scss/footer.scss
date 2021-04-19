@@ -1,0 +1,124 @@
+.footer {
+    padding: 60px 0;
+    background-color: #2D343C;
+    @include media-breakpoint-iPad-Pro {
+        padding: 40px 0;
+    }
+}
+
+.footer__list {
+    display: grid;
+    grid-template-columns: 135px 119px 119px 239px;
+    justify-content: space-between;
+    @include media-breakpoint-iPad {
+        grid-template-columns: 135px 240px;
+        grid-template-rows: 1fr 1fr;
+        gap: 20px;
+    }
+}
+
+.footer__item {
+    transform: translate(0px, 40%);
+    transition: all 0.6s ease 0s;
+    opacity: 0;
+    @include media-breakpoint-iPad {
+        transform: none;
+        transition: none;
+        opacity: 1;
+    }
+}
+
+.footer__item._active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+    @include media-breakpoint-iPad {
+        transform: none;
+    }
+}
+
+.footer__item._active:nth-child(1) {
+    transition: all 0.6s ease 0.2s;
+    @include media-breakpoint-iPad {
+        order: 3;
+        align-self: center;
+        transition: none;
+    }
+}
+
+.footer__item._active:nth-child(2) {
+    transition: all 0.6s ease 0.4s;
+    @include media-breakpoint-iPad {
+        order: 1;
+    }
+}
+
+.footer__item._active:nth-child(3) {
+    transition: all 0.6s ease 0.6s;
+    @include media-breakpoint-iPad {
+        order: 2;
+    }
+}
+
+.footer__item._active:nth-child(4) {
+    transition: all 0.6s ease 0.8s;
+    @include media-breakpoint-iPad {
+        order: 4;
+    }
+    
+}
+
+.list {
+    display: grid;
+    gap: 15px;
+    @include media-breakpoint-iPad-Pro {
+        gap: 10px;
+    }
+}
+
+.link {
+    font-size: 1.4rem;
+    line-height: (16 / 14);
+    letter-spacing: 0.05em;
+    transition: 0.1s;
+    @include media-breakpoint-iPad-Pro {
+        font-size: 1.2rem;
+    }
+    @include media-breakpoint-mobile-Plus {
+        font-size: 1.1rem;
+    }
+    @include media-breakpoint-mobile {
+        font-size: 0.8rem;
+    }
+}
+
+.link:hover {
+    text-decoration: underline;
+    @include media-breakpoint-iPad-Pro {
+        text-decoration: none;
+    }
+}
+
+.link-icon {
+    margin-left: 20px;
+    @include media-breakpoint-iPad {
+        margin-left: 10px;
+    }
+}
+
+.link-icon:first-child {
+    margin-left: 0;
+}
+
+.span--yellow {
+    color: #D4C17F;
+}
+
+.footer__icon {
+    height: 100%;
+    @include media-breakpoint-mobile-Plus {
+        height: 80%;
+    }
+    @include media-breakpoint-mobile {
+        height: 70%;
+    }
+}

@@ -4,9 +4,18 @@
     background-repeat: no-repeat;
     background-size: auto;
     background-position: top 86px left 266px;
+    @include media-breakpoint-iPad-Pro {
+        padding-bottom: 80px;
+    }
+    @include media-breakpoint-iPad {
+        padding-bottom: 40px;
+    }
 }
 
 .map__title--margin {
     margin-bottom: 100px;
+    @include media-breakpoint-iPad {
+        margin-bottom: 40px;
+    }
 }
 

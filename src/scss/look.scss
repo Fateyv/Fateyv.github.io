@@ -1,0 +1,94 @@
+.look {
+    padding: 180px 0;
+    background-image: url(../image/background.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center top;
+
+    transform: translate(-100%, 0px);
+    transition: all 1s ease 0.3s;
+    @include media-breakpoint-iPad-Pro {
+        padding: 100px 0;
+    }
+    @include media-breakpoint-iPad {
+        padding: 60px 0;
+    }
+    @include media-breakpoint-Surface-Duo {
+        padding: 30px 0;
+    }
+    @include media-breakpoint-mobile {
+        padding: 20px 0;
+    }
+}
+
+.look._active {
+    transform: translate(0px, 0px);
+}
+
+.look__title--margin {
+    margin-bottom: 50px;
+    @include media-breakpoint-iPad-Pro {
+        margin-bottom: 20px;
+    }
+}
+
+.look__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+    justify-content: space-between;
+    align-items: center;
+    @include media-breakpoint-iPad-Pro {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    @include media-breakpoint-iPad {
+       gap: 20px;
+    }
+    @include media-breakpoint-Surface-Duo {
+        gap: 10px;
+    }
+}
+
+.look__text {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    @include media-breakpoint-iPad-Pro {
+       text-align: center;
+    }
+    @include media-breakpoint-iPad {
+        font-size: 1.4rem;
+    }
+    @include media-breakpoint-mobile-Plus {
+        font-size: 1.3rem;
+    }
+    @include media-breakpoint-mobile {
+        font-size: 1.2rem;
+    }
+}
+
+.look__form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 35px;
+    column-gap: 30px;
+    align-items: center;
+    @include media-breakpoint-iPad-Pro {
+        display: grid;
+        grid-template-columns: 255px 255px;
+        grid-template-rows: 1fr 1fr;
+        justify-content: center;
+    }
+    @include media-breakpoint-iPad {
+        grid-template-columns: 220px 220px;
+    }
+    @include media-breakpoint-Surface-Duo {
+        gap: 10px;
+        grid-template-columns: 200px 200px;
+    }
+    @include media-breakpoint-mobile-Plus {
+        grid-template-columns: 48% 48%;
+    }
+}

@@ -3,6 +3,9 @@
     justify-content: space-between;
     align-items: center;
     padding-top: 30px;
+    @include media-breakpoint-iPad {
+        padding-top: 20px;
+    }
 }
 
 .logo {
@@ -10,6 +13,9 @@
     align-items: center;
     text-align: center;
     gap: 15px;
+    @include media-breakpoint-iPad {
+        gap: 10px;
+    }
 }
 
 .logo__caption {
@@ -22,18 +28,31 @@
 .nav__list {
     display: flex;
     align-items: center;
+    @include media-breakpoint-iPad {
+        display: none;
+    }
 }
 
 .nav__item {
     margin-left: 40px;
+    @include media-breakpoint-iPad-Pro {
+        margin-left: 15px;
+    }
 }
 
 .nav__link {
     font-size: 1.4rem;
     line-height: (16 / 14);
     letter-spacing: 0.05em;
+    @include media-breakpoint-iPad-Pro {
+        margin-left: 20px;
+        font-size: 1.3rem;
+    }
 }
 
 .nav__link:hover {
     text-decoration: underline;
+    @include media-breakpoint-iPad-Pro {
+        text-decoration: none;
+    }
 }

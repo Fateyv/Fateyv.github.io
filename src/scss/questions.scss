@@ -1,0 +1,96 @@
+.questions {
+    padding-bottom: 180px;
+
+    transform: translate(100%, 0px);
+    transition: all 1s ease 0s;
+    @include media-breakpoint-iPad-Pro {
+        padding-bottom: 80px;
+    }
+    @include media-breakpoint-iPad {
+        padding-bottom: 60px;
+    }
+    @include media-breakpoint-iPad {
+        transform: none;
+    }
+}
+
+.questions._active {
+    transform: translate(0px, 0px);
+    @include media-breakpoint-iPad {
+        transform: none;
+    }
+}
+
+.questions__title--margin {
+    margin-bottom: 50px;
+    @include media-breakpoint-iPad {
+        margin-bottom: 40px;
+    }
+}
+
+.questions__form {
+    display: grid;
+    grid-template-columns: repeat(4, 255px);
+    gap: 30px;
+    align-items: center;
+    @include media-breakpoint-large-tablet {
+        display: grid;
+        grid-template-columns: repeat(2, 255px);
+        grid-template-rows: 1fr 1fr;
+        justify-content: center;
+    }
+    @include media-breakpoint-iPad {
+        grid-template-columns: 220px 220px;
+    }
+    @include media-breakpoint-Surface-Duo {
+        gap: 10px;
+        grid-template-columns: 200px 200px;
+    }
+    @include media-breakpoint-mobile-Plus {
+        grid-template-columns: 160px 160px;
+    }
+    @include media-breakpoint-mobile {
+        grid-template-columns: 48% 48%;
+    }
+}
+
+.input-name {
+    order: 2;
+    @include media-breakpoint-large-tablet {
+        order: 1;
+    }
+}
+
+.input-tel {
+    order: 3;
+    @include media-breakpoint-large-tablet {
+        order: 2;
+    }
+}
+
+.form__text {
+    order: 1;
+    font-size: 1.3rem;
+    line-height: 1.23;
+    text-align: center;
+    color: #E7E7E7;
+    @include media-breakpoint-large-tablet {
+        order: 4;
+    }
+    @include media-breakpoint-iPad {
+        font-size: 1.2rem;
+    }
+    @include media-breakpoint-mobile-Plus {
+        font-size: 1.1rem;
+    }
+    @include media-breakpoint-mobile {
+        font-size: 1rem;
+    }
+}
+
+.questions__button {
+    order: 4;
+    @include media-breakpoint-large-tablet {
+        order: 3;
+    }
+}

@@ -6,6 +6,9 @@
     background-size: cover;
     display: flex;
     flex-direction: column;
+    @include media-breakpoint-iPad-Pro {
+        padding-bottom: 0;
+    }
 }
 
 .hero-wrapper {
@@ -16,11 +19,19 @@
 
 .hero__content {
     width: 52%;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     flex-direction: column;
     align-self: center;
     flex-grow: 1;
     justify-content: center;
+    @include media-breakpoint-iPad-Pro {
+        width: 60%
+    }
+    @include media-breakpoint-Surface-Duo {
+        width: 65%;
+    }
 }
 
 .hero__title {
@@ -31,6 +42,22 @@
     text-align: center;
     color: #D4C17F;
     margin-bottom: 250px;
+    @include media-breakpoint-large-tablet {
+        margin-bottom: 100px;
+    }
+    @include media-breakpoint-iPad-Pro {
+        font-size: 4rem;
+        margin-bottom: 75px;
+    }
+    @include media-breakpoint-iPad {
+        font-size: 3rem;
+        margin-bottom: 50px;
+    }
+    @include media-breakpoint-mobile-Plus {
+        font-size: 2.4rem;
+        margin-bottom: 30px;
+    }
+    
 
     transform: translate(0px, 200%);
     opacity: 0;
@@ -43,17 +70,21 @@
 }
 
 .hero__wrapper-links {
-    width: 54%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 100px;
-    margin-left: auto;
-    margin-right: auto;
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    @include media-breakpoint-mobile-Plus {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .hero__links {
     display: flex;
     align-items: center;
+    @include media-breakpoint-mobile-Plus {
+        margin-bottom: 10px;
+    }
     
     transform: translate(0px, 150%);
     opacity: 0;
@@ -75,4 +106,11 @@
     line-height: (21 / 18);
     text-align: center;
     margin-left: 15px;
+    @include media-breakpoint-iPad-Pro {
+        font-size: 1.6rem;
+    }
+    @include media-breakpoint-iPad {
+        font-size: 1.2rem;
+        margin-left: 5px;
+    }
 }

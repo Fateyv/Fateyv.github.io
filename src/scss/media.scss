@@ -1,0 +1,35 @@
+@mixin media-breakpoint-large-tablet {
+    @media (max-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin media-breakpoint-iPad-Pro {
+    @media (max-width: 1023px) {
+        @content;
+    }
+}
+
+@mixin media-breakpoint-iPad {
+    @media (max-width: 767px) {
+        @content;
+    }
+}
+
+@mixin media-breakpoint-Surface-Duo {
+  @media (max-width: 539px) {
+      @content;
+  }
+}
+
+@mixin media-breakpoint-mobile-Plus {
+    @media (max-width: 487px) {
+        @content;
+    }
+}
+
+@mixin media-breakpoint-mobile {
+    @media (max-width: 374px) {
+        @content;
+    }
+}

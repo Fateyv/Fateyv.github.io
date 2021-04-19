@@ -7,6 +7,12 @@
 
 .flats__title--margin {
     margin-bottom: 100px;
+    @include media-breakpoint-iPad-Pro {
+        margin-bottom: 60px;
+    }
+    @include media-breakpoint-iPad {
+        margin-bottom: 30px;
+    }
 }
 
 .flats__list {
@@ -14,6 +20,13 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 30px;
+    @include media-breakpoint-iPad {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        gap: 20px;
+        text-align: center;
+    }
 }
 
 .flats__item {
@@ -23,17 +36,23 @@
 }
 
 .flats__img {
-    width: auto;
+    width: 100%;
     transform: scale(0);
     transition: all 0.8s ease 0s;
 }
 
 .flats__img._active {
     transform: scale(1);
+    @include media-breakpoint-iPad-Pro {
+        transform: none;
+    }
 }
 
 .flats__img:hover {
     transform: scale(1.1);
+    @include media-breakpoint-iPad-Pro {
+        transform: none;
+    }
 }
 
 .flats__text {
@@ -45,6 +64,15 @@
     transform: translate(0px, 50%);
     opacity: 0;
     transition: all 0.3s ease 0s;
+    @include media-breakpoint-iPad-Pro {
+        font-size: 2.2rem;
+    }
+    @include media-breakpoint-iPad {
+        bottom: 25px; left: 25px;
+    }
+    @include media-breakpoint-mobile-Plus {
+        font-size: 1.8rem;
+    }
 }
 
 .flats__text._active {
