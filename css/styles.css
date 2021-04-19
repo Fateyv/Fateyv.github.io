@@ -528,7 +528,6 @@ html, body {
 .logo {
   display: grid;
   align-items: center;
-  text-align: center;
   gap: 15px; }
   @media (max-width: 767px) {
     .logo {
@@ -1056,7 +1055,7 @@ html, body {
   justify-content: space-between; }
   @media (max-width: 767px) {
     .footer__list {
-      grid-template-columns: 135px 240px;
+      grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
       gap: 20px; } }
 
@@ -1117,10 +1116,10 @@ html, body {
   color: #D4C17F; }
 
 .footer__icon {
-  height: 100%; }
+  height: auto; }
   @media (max-width: 487px) {
     .footer__icon {
-      height: 80%; } }
+      height: 60%; } }
   @media (max-width: 374px) {
     .footer__icon {
-      height: 70%; } }
+      height: 30%; } }

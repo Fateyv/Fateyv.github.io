@@ -11,7 +11,7 @@
     grid-template-columns: 135px 119px 119px 239px;
     justify-content: space-between;
     @include media-breakpoint-iPad {
-        grid-template-columns: 135px 240px;
+        grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         gap: 20px;
     }
@@ -89,11 +89,11 @@
 }
 
 .footer__icon {
-    height: 100%;
+    height: auto;
     @include media-breakpoint-mobile-Plus {
-        height: 80%;
+        height: 60%;
     }
     @include media-breakpoint-mobile {
-        height: 70%;
+        height: 30%;
     }
 }
