@@ -36,3 +36,12 @@ if (animItems.length > 0) {
     }, 300);
     
 }
+
+(function () {
+    const burger = document.querySelector('.header__burger');
+    const menu = document.querySelector('.nav');
+    burger.addEventListener('click', () => {
+        burger.classList.toggle('action');
+        menu.classList.toggle('action');
+    });
+}());
